@@ -10,7 +10,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ../src/app/data/pg:/var/lib/postgresql/data
+      - ../app/data/pg:/var/lib/postgresql/data
     networks:
       - app
     restart: always
@@ -19,7 +19,7 @@ services:
     container_name: pgadmin4_container
     image: dpage/pgadmin4
     volumes:
-      - ../src/app/data/pgadmin:/var/lib/pgadmin
+      - ../app/data/pgadmin:/var/lib/pgadmin
     environment:
       - PGADMIN_DEFAULT_EMAIL=admin@admin.com
       - PGADMIN_DEFAULT_PASSWORD=admin
@@ -34,8 +34,9 @@ services:
   app:
     container_name: dj_container
     build:
-      context: ../src/app
+      context: ../app
       target: dev
+    image: shipmate_mstr_db
     restart: always
     command: >
       sh -c "python manage.py wait_for_db &&
@@ -43,9 +44,9 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ../src/app:/app
+      - ../app:/app
       # show code changes locally 👉 only in development
-      - ../src/app/static:/vol/app/static
+      - ../app/static:/vol/app/static
     environment:
       - DEBUG=TRUE
       - DB_HOST=db

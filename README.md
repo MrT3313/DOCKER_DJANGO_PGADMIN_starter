@@ -1,8 +1,8 @@
-# SHIPMATE - MSTR - Database
+# Welcome
 
-> This is a  non-production test repo while we finalize the AWS CI / CD version of Colvin Run's Deployment Approach
+> This is a docker based Django Rest API w/ Django Rest Framework & pgAdmin
 
-## Usage
+# Usage
 
 1. Run Database Containers
   - postgres container : `pg_container`

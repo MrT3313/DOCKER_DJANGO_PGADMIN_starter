@@ -1,3 +1,8 @@
+# ADDED
+.idea
+.env
+/static/
+/app/data/
 
 ## GENERATED
 # Created by https://www.toptal.com/developers/gitignore/api/django
@@ -152,9 +157,3 @@ dmypy.json
 cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/django
-
-## ADDED
-# STATIC
-/static/
-
-/app/data/
