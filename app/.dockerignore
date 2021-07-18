@@ -1,0 +1,17 @@
+# VS code files
+.idea
+
+# ENV
+.gitignore
+.env
+
+# DOCS
+README.md
+
+# ENV
+.env/
+.venv/
+venv/
+
+# DATA
+**/data/

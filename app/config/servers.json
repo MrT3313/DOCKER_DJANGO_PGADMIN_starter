@@ -1,0 +1,13 @@
+{
+  "Servers": {
+    "1": {
+        "Name": "CRN",
+        "Group": "Dev",
+        "Port": 5432,
+        "Username": "postgres",
+        "Host": "pg_container",
+        "SSLMode": "prefer",
+        "MaintenanceDB": "my_db"
+    }
+  }
+}

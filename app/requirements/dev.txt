@@ -1,0 +1,6 @@
+Django>=3.2.5, <3.3
+django-cors-headers>=3.7.0, <3.8
+djangorestframework>=3.12.4, <3.13
+psycopg2-binary>=2.9.1, <2.10
+python-decouple>=3.4, <3.5
+uwsgi>=2.0.19.1, <2.1

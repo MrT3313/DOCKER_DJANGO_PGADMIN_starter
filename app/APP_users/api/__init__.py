@@ -1,0 +1,1 @@
+from .register_new_user import register_new_user
